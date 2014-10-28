@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Thank You!{% endblock %}
+{% block body_block %}
+    
+    <div class="row marketing">
+        <div class="col-lg-12">
+        	<div class="well">
+	            <h1>Thanks</h1>
+	            <p>Thanks for ordering Coding with Cats!</p>
+	            <h2>Pay now!</h2>
+	            <p>
+	            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<table>
+				<tr><td><input type="hidden" name="on0" value="Package">Package</td></tr><tr><td><select name="os0">
+					<option value="Basic">Basic $49.00 USD</option>
+					<option value="Deluxe">Deluxe $99.00 USD</option>
+					<option value="Super">Super $199.00 USD</option>
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+				">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+				</p>
+					            
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock %}

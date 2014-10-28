@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+    <div class="jumbotron">
+        <h1 class="title-headline">Coding with Cats</h1>
+        <h2 class="sub-heading">Are you ready to unleash the power of your feline companion and supercharge your productivity?</h2>
+        
+		<div class="row">
+			<div class="col-lg-5">
+				<img src="{% static 'img/cwc-tablet.jpg' %}" class="center-block hero-img"> 
+			</div>
+			<div class="col-lg-7">
+			    <p class="lead">Welcome to Coding with Cats where you will learn how to write code with your cat. No more will you try to work while your feline companion randomly walks across your keyboard. After a few simple lessons your cat will be helping you with your work in no time.</p>
+			    <p><a class="btn btn-lg btn-success" href="{% url 'preorder.views.order' %}" role="button">Preorder Now!</a></p>
+		    </div>
+	    </div>
+    </div>
+    
+    <div class="row social">
+    	<div class="col-lg-12">
+    		<div class="well">
+    			<div class="row">
+    				<div class="col-xs-6">
+		    			<a href="https://twitter.com/share" class="twitter-share-button center-block" data-via="JonDHanks" data-size="large" data-hashtags="CodingWithCats">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+					<div class="col-xs-1"></div>
+					<div class="col-xs-5">
+							
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=245380492175442&version=v2.0";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-like" data-href="http://127.0.0.1:4200/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+					
+					</div>
+				</div>
+				
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="row marketing">
+        <div class="col-lg-6">
+			<div class="well">
+	            <h4>Cats</h4>
+	            <p>Strangely enough cats love to code who knew?</p>
+	
+	            <h4>Dogs</h4>
+	            <p>Dogs are strictly prohibited.</p>
+	
+	            <h4>Birds</h4>
+	            <p>Birds get chased away by the cats usually. They provide a nice chirping noise but it generally distracts the cat.</p>
+        	</div>
+        </div>
+
+        <div class="col-lg-6">
+			<div class="well">
+	            <h4>Catnip</h4>
+	            <p>Catnip can be a powerful stimulant for cat productivity. But some cats will just wander off our flop around on the floor on it.</p>
+	
+	            <h4>Food</h4>
+	            <p>Always keep your cat well fed.</p>
+	
+	            <h4>Windows</h4>
+	            <p>It's best if you have a window nearby for the cat to look out at as he ponders any difficult algorithms.</p>
+        	</div>
+        </div>
+    </div>
+    
+{% endblock %}

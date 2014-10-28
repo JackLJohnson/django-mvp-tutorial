@@ -1,0 +1,15 @@
+Django==1.7
+argparse==1.2.1
+certifi==14.05.14
+setuptools==0.7.3
+dj-database-url==0.3.0
+dj-static==0.0.6
+django-crispy-forms==1.4.0
+django-toolbelt==0.0.1
+docopt==0.4.0
+gunicorn==19.1.1
+mailchimp==2.0.8
+psycopg2==2.5.3
+requests==2.4.0
+static3==0.5.1
+wsgiref==0.1.2

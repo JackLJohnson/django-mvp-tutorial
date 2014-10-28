@@ -1,0 +1,4 @@
+vmvp
+*.pyc
+staticfiles
+db.sqlite3
